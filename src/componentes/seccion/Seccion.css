@@ -1,0 +1,39 @@
+.seccion {
+    background-color: #EAD2AC; /* Marrón claro */
+    color: #333; /* Gris oscuro */
+    padding: 20px;
+    text-align: center;
+}
+
+.seccion h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.seccion img {
+    width: 60%;
+    margin-bottom: 20px;
+    display: block;
+    margin: auto; /* Centrar la imagen */
+}
+
+.seccion p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.seccion button {
+    background-color: #FFB6C1; /* Rosa claro */
+    color: #FFF; /* Blanco */
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.seccion button:hover {
+    background-color: #b6e2b6; /* Verde claro */
+}
