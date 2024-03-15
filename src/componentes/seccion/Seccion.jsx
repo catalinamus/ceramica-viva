@@ -1,11 +1,7 @@
 import './Seccion.css';
 import ceramicaViva from '../../assets/img/ceramicaViva.jpg';
-import Boton from '../boton/Boton';
 
 function Seccion() {
-    const HandlerClicBoton = () =>{
-        alert('Hiciste click en el boton');
-    }
     return (
         <section className='seccion'>
             <h2> Explora la Magia de las Creaciones Únicas </h2>

@@ -1,9 +1,9 @@
 {
   "name": "mundo-trufa",
   "private": false,
-  "version": "0.0.2",
+  "version": "0.0.5",
   "type": "module",
-  "homepage": "https://catalinamus.github.io/ceramica-viva/",
+  "homepage": "https://catalinamus.github.io/ceramica-viva",
   "scripts": {
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist",

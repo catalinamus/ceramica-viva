@@ -12,7 +12,7 @@ import Login from './componentes/login/Login';
 function App() {
   return (
     <div className='contenedor'>
-      <Router>
+      <Router basename="/ceramica-viva">
         <Header />
         <Menu />
         <Routes>
