@@ -1,10 +1,13 @@
 // Registro.js
+import './Registro.css';
 import { useState } from 'react';
 
 function Registro() {
-    const [username, setUsername] = useState('');
+    const [nombre, setNombre] = useState('');
+    const [apellido, setApellido] = useState('');
     const [email, setEmail] = useState('');
-    const [password, setPassword] = useState('');
+    const [telefono, setTelefono] = useState('');
+    const [contraseña, setContraseña] = useState('');
 
     const handleRegister = () => {
         // This is just a mock, so we're not doing any actual registration
@@ -12,16 +15,26 @@ function Registro() {
     };
 
     return (
-        <div>
+        <div className='registro-container'>
             <h2>Formulario de registro</h2>
             <form>
                 <div>
-                    <label htmlFor="username">Username:</label>
+                    <label htmlFor="nombre">Nombre:</label>
                     <input
                         type="text"
-                        id="username"
-                        value={username}
-                        onChange={(e) => setUsername(e.target.value)}
+                        id="nombre"
+                        value={nombre}
+                        onChange={(e) => setNombre(e.target.value)}
+                        required
+                    />
+                </div>
+                <div>
+                    <label htmlFor="apellido">Apellido:</label>
+                    <input
+                        type="text"
+                        id="apellido"
+                        value={apellido}
+                        onChange={(e) => setApellido(e.target.value)}
                         required
                     />
                 </div>
@@ -36,12 +49,22 @@ function Registro() {
                     />
                 </div>
                 <div>
-                    <label htmlFor="password">Password:</label>
+                    <label htmlFor="telefono">Telefono:</label>
                     <input
-                        type="password"
-                        id="password"
-                        value={password}
-                        onChange={(e) => setPassword(e.target.value)}
+                        type="telefono"
+                        id="telefono"
+                        value={telefono}
+                        onChange={(e) => setTelefono(e.target.value)}
+                        required
+                    />
+                </div>
+                <div>
+                    <label htmlFor="contraseña">Contraseña:</label>
+                    <input
+                        type="contraseña"
+                        id="contraseña"
+                        value={contraseña}
+                        onChange={(e) => setContraseña(e.target.value)}
                         required
                     />
                 </div>

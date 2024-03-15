@@ -1,9 +1,10 @@
 // Login.js
+import './Login.css';
 import { useState } from 'react';
 
 function Login() {
-    const [username, setUsername] = useState('');
-    const [password, setPassword] = useState('');
+    const [email, setEmail] = useState('');
+    const [contraseña, setContraseña] = useState('');
 
     const handleLogin = () => {
         // This is just a mock, so we're not doing any actual login
@@ -11,30 +12,30 @@ function Login() {
     };
 
     return (
-        <div>
-            <h2>Login Page</h2>
+        <div className='login-container'>
+            <h2> Iniciar Sesión </h2>
             <form onSubmit={(e) => e.preventDefault()}>
                 <div>
-                    <label htmlFor="username">Username:</label>
+                    <label htmlFor="email">Email:</label>
                     <input
                         type="text"
-                        id="username"
-                        value={username}
-                        onChange={(e) => setUsername(e.target.value)}
+                        id="email"
+                        value={email}
+                        onChange={(e) => setEmail(e.target.value)}
                         required
                     />
                 </div>
-                <div>
-                    <label htmlFor="password">Password:</label>
+                <div className='form-group'>
+                    <label htmlFor="contraseña">Contraseña:</label>
                     <input
-                        type="password"
-                        id="password"
-                        value={password}
-                        onChange={(e) => setPassword(e.target.value)}
+                        type="contraseña"
+                        id="contraseña"
+                        value={contraseña}
+                        onChange={(e) => setContraseña(e.target.value)}
                         required
                     />
                 </div>
-                <button type="button" onClick={handleLogin}>Login</button>
+                <button type="button" className='login-button' onClick={handleLogin}> Iniciar Sesión </button>
             </form>
         </div>
     );

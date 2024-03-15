@@ -22,6 +22,8 @@ function ProductoDetalle() {
                 nombre={producto.nombre}
                 variedad={producto.variedad}
                 info={producto.info}
+                stock={producto.stock}
+                precio={producto.precio}
                 imagen={producto.imagen}               
             />
         </div>

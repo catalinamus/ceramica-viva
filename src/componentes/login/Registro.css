@@ -1,0 +1,48 @@
+/* Registro.css */
+
+.registro-container {
+    max-width: 600px; /* Tamaño máximo del contenedor */
+    margin: 0 auto; /* Centrar el contenedor en la página */
+    padding: 20px; /* Espacio alrededor del contenedor */
+  }
+  
+  .registro-container h2 {
+    text-align: center; /* Centrar el título */
+  }
+  
+  .registro-container form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .registro-container form > div {
+    margin-bottom: 20px; /* Espacio entre cada campo */
+  }
+  
+  .registro-container form label {
+    font-weight: bold; /* Hacer el texto de la etiqueta en negrita */
+  }
+  
+  .registro-container form input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  .registro-container form button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #e7ba72; /* Color de fondo del botón */
+    color: #fff; /* Color del texto del botón */
+    cursor: pointer;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+  }
+  
+  .registro-container form button:hover {
+    background-color: #f0b14b; /* Cambiar el color de fondo al pasar el ratón sobre el botón */
+  }
+  

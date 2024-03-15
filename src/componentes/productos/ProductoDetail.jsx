@@ -1,7 +1,7 @@
 import PropTypes from "prop-types";
-import './Productos.css';
 import imagenes from "./imagenes";
 import { Link } from 'react-router-dom';
+import './imagenes.css';
 
 function ProductoDetail(props) {
     return (
@@ -9,8 +9,12 @@ function ProductoDetail(props) {
             <h2> {props.nombre} </h2>
             <p> {props.variedad} </p>
             <p> {props.info} </p>
-            <div className="contenedor-img">
-                <img src={imagenes[props.imagen]} alt={props.nombre} />
+            <p> Stock: {props.stock} </p>
+            <p> Precio: {props.precio} </p>
+            <div className="imagenes-container">
+                {props.imagen.map((imagenName, index) => (
+                    <img key={index} src={imagenes[imagenName]} alt={props.nombre} />
+                ))}
             </div>
             <div>
             <Link to={`/productos`}>
@@ -24,7 +28,9 @@ ProductoDetail.propTypes = {
     nombre: PropTypes.string.isRequired,
     variedad: PropTypes.string,
     info: PropTypes.string,
-    imagen: PropTypes.string,
+    stock: PropTypes.any,
+    precio: PropTypes.any,
+    imagen: PropTypes.arrayOf(PropTypes.string),
 };
 ;
 

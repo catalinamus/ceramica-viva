@@ -1,0 +1,42 @@
+/* Estilo para la sección de productos */
+.seccion-productos {
+    background-color: #EAD2AC; /* Marrón claro */
+    color: #333; /* Gris oscuro */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 80%; /* Ocupar el 80% del ancho de la página */
+    margin: 0 auto; /* Centrar la sección horizontalmente */
+    box-sizing: border-box; /* Incluir el padding y el borde en el ancho total */
+  }
+  
+  /* Estilo para las imágenes */
+  .seccion-productos .imagenes-container {
+    display: flex; /* Utilizar flexbox */
+    flex-wrap: wrap; /* Permitir que las imágenes se envuelvan a la siguiente línea si no caben en una sola fila */
+    justify-content: space-between; /* Distribuir el espacio entre las imágenes */
+  }
+  
+  .seccion-productos .imagenes-container img {
+    width: calc(20% - 2%); /* Calcular el ancho de la imagen para que ocupe el 20% del contenedor con un espacio del 2% entre ellas */
+    max-width: 100%; /* Asegurarse de que las imágenes no se estiren más allá de su tamaño original */
+    height: auto; /* Mantener la proporción de la imagen */
+    margin-bottom: 0.1%; /* Espacio entre las imágenes */
+  }
+  
+  /* Estilo para las imágenes en una fila */
+  @media (max-width: 768px) {
+    .seccion-productos .imagenes-container img {
+      width: calc(33.33% - 2%); /* Reducir el tamaño de las imágenes a un tercio del contenedor con un espacio del 2% entre ellas en pantallas más pequeñas */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .seccion-productos .imagenes-container img {
+      width: calc(50% - 2%); /* Reducir el tamaño de las imágenes a la mitad del contenedor con un espacio del 2% entre ellas en pantallas aún más pequeñas */
+    }
+  }
+  
+  
+  
