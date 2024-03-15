@@ -4,7 +4,7 @@ function Footer() {
 
     return (
         <footer className='footer'>
-            <p> Derechos rservados </p>
+            <p> Derechos reservados </p>
         </footer>
     );
 }

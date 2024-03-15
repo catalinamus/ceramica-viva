@@ -1,6 +1,6 @@
 .seccion {
-    background-color: #EAD2AC; /* Marrón claro */
-    color: #333; /* Gris oscuro */
+    background-color: #EAD2AC;
+    color: #333;
     padding: 20px;
     text-align: center;
 }
@@ -14,7 +14,7 @@
     width: 60%;
     margin-bottom: 20px;
     display: block;
-    margin: auto; /* Centrar la imagen */
+    margin: auto;
 }
 
 .seccion p {
@@ -22,18 +22,6 @@
     line-height: 1.6;
     margin-bottom: 20px;
     text-align: center;
-}
-
-.seccion button {
-    background-color: #FFB6C1; /* Rosa claro */
-    color: #FFF; /* Blanco */
-    border: none;
-    padding: 10px 20px;
-    font-size: 16px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-.seccion button:hover {
-    background-color: #b6e2b6; /* Verde claro */
+    width: 60%;
+    margin: auto;
 }

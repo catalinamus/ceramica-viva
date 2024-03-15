@@ -37,6 +37,13 @@
       width: calc(50% - 2%); /* Reducir el tamaño de las imágenes a la mitad del contenedor con un espacio del 2% entre ellas en pantallas aún más pequeñas */
     }
   }
+  .container {
+    margin: 20px;
+    padding: 10px;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+}
+
   
   
   

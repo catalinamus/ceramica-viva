@@ -1,10 +1,7 @@
-/* Login.css */
-
 .login-container {
     max-width: 400px; /* Tamaño máximo del contenedor */
     margin: 0 auto; /* Centrar el contenedor en la página */
     padding: 20px; /* Espacio alrededor del contenedor */
-    border: 1px solid #ccc; /* Borde alrededor del contenedor */
     border-radius: 5px; /* Borde redondeado */
   }
   
@@ -41,7 +38,6 @@
     background-color: #e7ba72; /* Color de fondo del botón */
     color: #fff; /* Color del texto del botón */
     cursor: pointer;
-    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
   }
   
   .login-container form button:hover {

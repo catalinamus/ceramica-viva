@@ -16,7 +16,7 @@ function ProductoDetail(props) {
                     <img key={index} src={imagenes[imagenName]} alt={props.nombre} />
                 ))}
             </div>
-            <div>
+            <div className="container">
             <Link to={`/productos`}>
                 <button>Volver</button>
             </Link>
